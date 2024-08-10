@@ -1,16 +1,17 @@
 "use client";
 import { useState } from 'react';
-import CurrencyExchange from "./api/currencyExchange.js/index.js";
+import CurrencyExchange from "./api/currencyExchange.js";
 
 export default function Home() {
   const [baseCurrency, setbaseCurrency] = useState("USD");
   const [targetCurrency, settargetCurrency] = useState("INR");
-  const [baseAmount, setbaseAmount] = useState(0.00);
-  const [targetAmount, settargetAmount] = useState(0.00);
+  const [baseAmount, setbaseAmount] = useState("");
+  const [targetAmount, settargetAmount] = useState("");
   const [result, setResult] = useState(0.00);
 
-
-
+  const rate =CurrencyExchange("USD","INR")
+  const response = rate.json();
+  console.log(response.data)
   const ExchangeData = (baseCurrency, targetCurrency, baseAmount, targetAmount) => {
 
   }
