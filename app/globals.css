@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-gradient-neon {
+    background: linear-gradient(to right, #004d00, #7cbe00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.background-gradient{
+    background: linear-gradient(to right, #000000, #353535);
+}
+.text-gradient-black {
+    background: linear-gradient(to right, #000000, #353535);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.select-custom {
+    color: white; /* Default text color */
+}
+
+.select-custom:focus {
+    background-color: black;
+    
+}
+
+
+.shadow-custom {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) as needed */
+}
+body {
+    @apply font-roboto;
+}
