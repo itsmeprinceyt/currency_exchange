@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "CurrencyExchange is a dynamic and user-friendly web application built with Next.js, designed to provide real-time currency conversion and exchange rate information.",
   icons: {
-    icon: "/dollar-symbol.png",  // This is where the favicon is specified
+    icon: "/dollar-symbol.png",
   },
 };
 
