@@ -44,18 +44,17 @@ Your application will be running on http://localhost:3000.
 4. View Results: The converted amount will be displayed based on real-time exchange rates.
 
 ## API Integration
-The application uses the FreeCurrencyAPI to fetch exchange rates. Make sure to replace your_api_key_here with your actual API key.
+The application uses the FreeCurrencyAPI to fetch exchange rates. Make sure to replace `'YOUR-API-URL'` with your actual API key.
 
 Here's a brief example of how the API is used in the project:
 
 ```javascript
-import { CurrencyExchange } from '@everapi/freecurrencyapi-js';
-
-const fetchExchangeRates = async () => {
-  const api = new CurrencyExchange('your_api_key_here');
-  const rates = await api.convert('USD', 'INR', 1);
-  console.log(rates);
-};
+const ExchangeData = async () => { // fetching current exchange rate of all currencies.
+    let response = await fetch('YOUR-API-URL');
+    let jsonResponse = await response.json(); // converting into JSON format
+    setRate(jsonResponse.data);
+    finalExchange(baseCurrency, targetCurrency, baseAmount);
+  }
 ```
 
 ## Customization
