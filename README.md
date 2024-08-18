@@ -70,5 +70,9 @@ If you'd like to contribute to this project, please follow these steps:
 5. Push to the branch (git push origin feature-branch).
 6. Create a new Pull Request.
 
+## Explanation Video
+
+https://www.youtube.com/watch?v=hXyu8DO7SQ8
+
 ## Live Link
 https://currency-exchange-lemon-ten.vercel.app/
